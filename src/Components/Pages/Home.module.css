@@ -48,12 +48,6 @@
   transition: all 0.3s ease-in-out;
 }
 
-.contentLeft img:hover,
-.contentRight img:hover,
-.contentLeft p:hover {
-  transform: scale(1.08);
-}
-
 .contentLeft {
   opacity: 0;
   transform: translateX(-70px);
