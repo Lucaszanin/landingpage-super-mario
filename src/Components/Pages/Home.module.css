@@ -1,0 +1,119 @@
+.backgroundVideo {
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.backgroundVideo::after {
+  content: "";
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.video {
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contentLeft img {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 500px;
+}
+
+.contentLeft img,
+.contentRight img,
+.contentLeft p {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.contentLeft img:hover,
+.contentRight img:hover,
+.contentLeft p:hover {
+  transform: scale(1.08);
+}
+
+.contentLeft {
+  opacity: 0;
+  transform: translateX(-70px);
+  animation: animeLeft 5s forwards;
+}
+
+.contentRight {
+  opacity: 0;
+  transform: translateX(70px);
+  animation: animeLeft 5s forwards;
+}
+
+.contentLeft p {
+  color: #a8adb7;
+  width: 85%;
+  font-size: 18px;
+  margin: 30px 0;
+  font-weight: 500;
+  text-align: left;
+}
+
+@keyframes animeLeft {
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}
+
+@media (max-width: 1200px) {
+  body {
+    background-color: #f44336;
+  }
+
+  .fundo-video {
+    display: none;
+  }
+
+  .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    gap: 30px;
+  }
+
+  .contentRight {
+    max-width: 50%;
+  }
+
+  .contentLeft {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .contentLeft p {
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .container .botao-trailer {
+    background-color: #263238;
+  }
+}
