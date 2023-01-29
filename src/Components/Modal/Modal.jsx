@@ -23,7 +23,7 @@ function Modal({ onClose, id = "modal" }) {
           src="https://www.youtube.com/embed/Cb4WV4aXBpk"
           title="Trailer oficial"
           frameborder="1"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
       </div>

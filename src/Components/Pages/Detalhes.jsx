@@ -21,10 +21,9 @@ function Detalhes() {
               id="video"
               width="1000"
               height="500"
-              src="https://www.youtube.com/embed/Cb4WV4aXBpk?autoplay=1&controls=0&loop=1"
+              src="https://www.youtube.com/embed/Cb4WV4aXBpk?controls=0&loop=1"
               title="Trailer oficial"
-              frameborder="1"
-              allow="autplay"
+              frameborder="0"
             ></iframe>
           </div>
           <div>
