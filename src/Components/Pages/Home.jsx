@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../Partials/Header";
 import styles from "./Home.module.css";
 import titulo from "../../Assets/titulo.png";
 import mario from "../../Assets/super-mario-chars.png";
 import video from "../../video/video-mario.mp4";
+import Button from "../Button/Button";
+import Modal from "../Modal/Modal";
 
 function Home() {
+  const [modal, setModal] = useState(false);
+
   return (
     <div>
       <div className={styles.backgroundVideo}>
@@ -23,11 +27,13 @@ function Home() {
             ameaçado pelo rei dos Koopas, que faz de tudo para conseguir reinar
             em todos os lugares.
           </p>
+          <Button onClick={()=> setModal(true)}/>
         </section>
         <section className={styles.contentRight}>
           <img src={mario} alt="Imagem da turma do Super Mario" />
         </section>
       </main>
+      {modal ? <Modal onClose={() => setModal(false)} /> : null}
     </div>
   );
 }

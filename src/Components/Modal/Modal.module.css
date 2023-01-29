@@ -1,0 +1,45 @@
+.background {
+  height: 100vh;
+  width: calc(100vw - 18px);
+  position: fixed;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.671);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+}
+
+.modal {
+  background: rgba(231, 9, 9, 0.445);
+  width: 570px;
+  height: 370px;
+  border-radius: 10px;
+  transform: scale(.5);
+  animation: animeModal .6s forwards;
+}
+
+@keyframes animeModal {
+  to{
+    transform: scale(1);
+  }
+}
+
+.headerModal {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 5px 15px;
+}
+
+.headerModal img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.headerModal img:hover{
+    transform: scale(1.15);
+}

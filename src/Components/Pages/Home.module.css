@@ -49,6 +49,9 @@
 }
 
 .contentLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   opacity: 0;
   transform: translateX(-70px);
   animation: animeLeft 5s forwards;
