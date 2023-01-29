@@ -141,28 +141,35 @@
 }
 
 @media (max-width: 900px) {
-  .contentLeft img ,.contentRight img{
+  .contentLeft img,
+  .contentRight img {
     max-width: 300px;
   }
 }
-
 
 @media (max-width: 740px) {
   .main {
     flex-wrap: wrap;
   }
-  .backgroundVideo{
+  .backgroundVideo {
     display: none;
   }
 
   .contentRight {
-  max-width: 100%;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
   }
-  .contentRight img{
+  .contentRight img {
     margin-top: 30px;
   }
 
-  .contentLeft{
+  .contentLeft {
     align-items: center;
+  }
+  .contentLeft img,
+  .contentRight img {
+    max-width: 250px;
   }
 }
