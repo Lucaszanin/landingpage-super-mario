@@ -32,6 +32,7 @@
   height: 80vh;
   align-items: center;
   justify-content: space-between;
+  padding: 30px;
 }
 
 .contentLeft img {
@@ -61,6 +62,10 @@
   opacity: 0;
   transform: translateX(70px);
   animation: animeLeft 5s forwards;
+}
+
+.contentRight img {
+  max-width: 500px;
 }
 
 .contentLeft p {
@@ -112,5 +117,52 @@
 
   .container .botao-trailer {
     background-color: #263238;
+  }
+}
+
+@media (max-width: 1300px) {
+  .contentRight {
+    padding-right: 20px;
+  }
+  .contentRight img {
+    max-width: 450px;
+  }
+  .contentLeft {
+    align-items: flex-start;
+  }
+
+  .contentLeft img {
+    max-width: 400px;
+  }
+
+  .contentLeft p {
+    text-align: left;
+  }
+}
+
+@media (max-width: 900px) {
+  .contentLeft img ,.contentRight img{
+    max-width: 300px;
+  }
+}
+
+
+@media (max-width: 740px) {
+  .main {
+    flex-wrap: wrap;
+  }
+  .backgroundVideo{
+    display: none;
+  }
+
+  .contentRight {
+  max-width: 100%;
+  }
+  .contentRight img{
+    margin-top: 30px;
+  }
+
+  .contentLeft{
+    align-items: center;
   }
 }

@@ -1,0 +1,42 @@
+.body {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  height: 100vh;
+}
+
+.section {
+  padding: 20px;
+  animation: animeLeft .5s forwards;
+}
+
+@keyframes animeLeft{
+    from {
+        opacity: 0;
+        transform: translateX(-70px);
+    }
+    to{
+        opacity: initial;
+        transform: initial;
+    }
+}
+
+.title {
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.subTitle {
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.details {
+    color: #FFF;
+    margin-top: 20px;
+    line-height: 1.5;
+}

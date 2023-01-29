@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Header.module.css";
 import logo from "../../Assets/logo-chapeu-mario.png";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -11,12 +12,8 @@ function Header() {
         </div>
         <nav>
           <ul className={styles.nav}>
-            <a href="/">
-              <li>Home</li>
-            </a>
-            <a href="#">
-              <li>Detalhes</li>
-            </a>
+            <Link to="/">Home</Link>
+            <Link to="/detalhes">Detalhes</Link>
           </ul>
         </nav>
       </header>
